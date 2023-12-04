@@ -1,4 +1,4 @@
-# educom_groepsopdracht_dierenartsen
+# educom_dierenartsen
 
 ## Project setup
 ```

@@ -1,9 +1,9 @@
 import axios from 'axios'
 import bcrypt from 'bcryptjs'
 
-const baseUrlPostUser = 'http://localhost:5226/users'
-const baseUrlGetUser = 'http://localhost:5226/users/ByEmail?email='
-const baseUrlGetUserById = 'http://localhost:5226/users/'
+const baseUrlPostUser = 'http://localhost:3000/users'
+const baseUrlGetUser = 'http://localhost:3000/users/ByEmail?email='
+const baseUrlGetUserById = 'http://localhost:3000/users/'
 const saltRounds = 10
 
 /**
@@ -32,7 +32,7 @@ export async function storeUser(newUser) {
 export async function putUser(newUser) {
     try {
         const response = await axios.put(
-            'http://localhost:5226/users/' + newUser.id, newUser)
+            'http://localhost:3000/users/' + newUser.id, newUser)
         return true
     }
     catch(error) {
